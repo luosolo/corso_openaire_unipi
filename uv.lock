@@ -1,5 +1,5 @@
 version = 1
-revision = 3
+revision = 5
 requires-python = ">=3.12"
 resolution-markers = [
     "python_full_version >= '3.14' and sys_platform == 'win32'",
@@ -181,6 +181,15 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/1c/80/cc3c531dd70c8ffa1045aecf33c97c5581cc8fd0e824b3ecb2c1881550c1/fastjsonschema-2.22.3.tar.gz", hash = "sha256:8330c91b027dcf941efcb7b1f0998515ff95d177ea15bbabdfe8671965620901", size = 388854, upload-time = "2026-11-01T21:11:34.389Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/d7/0d/6caab33488dc9d26440c24221fa610c7c8b83c30715ab45d31f0e004308e/fastjsonschema-2.22.3-py3-none-any.whl", hash = "sha256:f670b443830b75aca3f00b75949efa20f4b2a80302ec7a21505c28dd54cffd43", size = 28442, upload-time = "2026-11-01T21:11:29.306Z" },
+]
+
+[[package]]
+name = "graphframes-py"
+version = "0.12.3"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/f9/52/b65bfbf3c5bcb9fcb751d5dd80be434ee050081b9e0a956bb04fc1486bd5/graphframes_py-0.12.3.tar.gz", hash = "sha256:93023e028a9562ac2a83161de0c74e4a06d9d1bc309e0a2edd493493c5f9a277", size = 82916, upload-time = "2026-10-05T19:53:08.001Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/e6/77/632d2ae464e0a8e28af286499bc84336aa6f0ac086140e13a8c6a5fe0609/graphframes_py-0.12.3-py3-none-any.whl", hash = "sha256:ecf4ab9aa75757c8214d3e80127466042f562227d99bdf30bc5bb708f4160f48", size = 97471, upload-time = "2026-10-05T19:53:06.514Z" },
 ]
 
 [[package]]
@@ -456,6 +465,7 @@ name = "openaire-beginners-kit"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
+    { name = "graphframes-py" },
     { name = "ipykernel" },
     { name = "ipywidgets" },
     { name = "nbformat" },
@@ -467,6 +477,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
+    { name = "graphframes-py", specifier = ">=0.12.3" },
     { name = "ipykernel", specifier = ">=7.4.0" },
     { name = "ipywidgets", specifier = ">=8.1.9" },
     { name = "nbformat", specifier = ">=5.11.1" },

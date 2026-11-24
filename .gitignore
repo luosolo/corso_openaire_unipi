@@ -160,6 +160,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+.vscode/
 
 # Conda environments
 conda-meta/
